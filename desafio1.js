@@ -1,3 +1,5 @@
+//desafío complementario 1 - crear algoritmo
+
 //Van ambos códigos en main. Comentar uno para ejecutar el otro 😊
 
 //EJEMPLO WHILE
