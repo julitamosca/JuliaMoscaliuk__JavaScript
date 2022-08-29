@@ -31,9 +31,9 @@ alert('El total de su compra es: $' + totalCompra + ' Pero te espera un increibl
 
 function precioFinal(monto){
     let descuento = 0
-    if (monto<=1000){
+    if (monto<=500){
         descuento = 5
-    } else if (monto>1000 && monto<=1500){
+    } else if (monto>500 && monto<=1500){
         descuento = 7
     }else if (monto>1500 && monto<=2000 ){
         descuento = 10
