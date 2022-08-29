@@ -1,47 +1,50 @@
 //desafío 2 - simulador interactivo
 
 let totalCompra = 0
-let productoSeleccionado = parseInt(prompt('Ingresa el produco que deseas comprar 1-Camiseta 2-Gorro 3-Taza 4-Llavero'))
+let agregarAlCarrito = parseInt(prompt('Ingresa el produco que deseas comprar: \n1-Camiseta \n2-Gorro \n3-Taza \n4-Llavero'))
 let seguirComprando = true
 
 
 while (seguirComprando === true) {
-    if (productoSeleccionado === 1) {
-        totalCompra = totalCompra + 780
-    } else if (productoSeleccionado === 2) {
+    if (agregarAlCarrito === 1) {
+        totalCompra = totalCompra + 700
+    } else if (agregarAlCarrito === 2) {
         totalCompra = totalCompra + 300
-    } else if (productoSeleccionado === 3) {
+    } else if (agregarAlCarrito === 3) {
         totalCompra = totalCompra + 200
-    } else if (productoSeleccionado === 4) {
-        totalCompra = totalCompra + 150
+    } else if (agregarAlCarrito === 4) {
+        totalCompra = totalCompra + 100
     } else {
-        productoSeleccionado = parseInt(prompt('Opción incorrecta, vuelve a intentarlo'))
+        agregarAlCarrito = parseInt(prompt('Opción incorrecta, vuelve a intentarlo: \n1-Camiseta \n2-Gorro \n3-Taza \n4-Llavero'))
         continue
     }
 
-    decision = parseInt(prompt('¿Eso es todo? ¿Deseas terminar tu compra? 1.si - 2.no'))
+    decision = parseInt(prompt('¿Quisieras agregar otro producto? 1.si - 2.no'))
     if (decision === 1) {
-        productoSeleccionado = parseInt(prompt('Ingresa el produco que deseas comprar 1-Camiseta 2-Gorro 3-Taza 4-Llavero'))
+        agregarAlCarrito = parseInt(prompt('Ingresa el produco que deseas comprar: 1-Camiseta 2-Gorro 3-Taza 4-Llavero'))
     } else if (decision === 2) {
         seguirComprando = false
     }
 }
 
-alert('El total de su compra es:' + totalCompra)
+alert('El total de su compra es: $' + totalCompra + ' Pero te espera un increible descuento.')
 
-function calcPrecioConDescuento(valor){
+function precioFinal(monto){
     let descuento = 0
-    if (valor<=1000){
+    if (monto<=1000){
         descuento = 5
-    } else if (valor>1000 && valor <=1500 ){
+    } else if (monto>1000 && monto<=1500){
+        descuento = 7
+    }else if (monto>1500 && monto<=2000 ){
         descuento = 10
-    }else if (valor>1500 && valor <=2000 ){
-        descuento = 15
 }else{
-    descuento=25
+    descuento = 12
 }
 
-let valorDescuento = valor *(descuento/100)
-valor = valor - valorDescuento
-return valor
+let montoDescuento = monto *(descuento/100)
+monto = monto - montoDescuento
+return monto
 }
+
+let precioFinal = precioFinal (totalCompra)
+alert('El precio final de tu compra es: $' + precioFinal)
