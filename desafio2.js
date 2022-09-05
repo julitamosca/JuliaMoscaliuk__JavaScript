@@ -46,4 +46,5 @@ monto = monto - montoDescuento
 return monto
 }
 
-alert('El precio final de tu compra es: $' + precioFinal)
+let precioUltimo = precioFinal(totalCompra)
+alert ('El precio final de tu compra es: $' + precioUltimo)
