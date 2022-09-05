@@ -6,27 +6,29 @@ let agregarAlCarrito = parseInt(prompt('Ingresa el produco que deseas comprar: \
 let seguirComprando = true
 
 let productosLocales = []
+let compraDeJulia = []
 
 const camiseta = {
     nombre: 'Camiseta',
     precio: 700,
 }
+productosLocales.push(camiseta)
 const gorro = {
     nombre: 'Gorro',
     precio: 300,
 }
+productosLocales.push(gorro)
 const taza = {
     nombre: 'Taza',
     precio: 200,
 }
+productosLocales.push(taza)
 const llavero = {
     nombre: 'Llavero',
     precio: 100,
 }
-productosLocales.push(camiseta)
-productosLocales.push(gorro)
-productosLocales.push(taza)
 productosLocales.push(llavero)
+
 console.log(productosLocales)
 
 while (seguirComprando === true) {
@@ -75,7 +77,7 @@ alert('El precio final de tu compra es: $' + precioUltimo)
 
 
 
-//ARRAYS - practica 
+//ARRAYS - practica en base a codigo de los repartidos
 
 /*const numeros = [1,2,3,4,5];
 console.log (numeros[0])
