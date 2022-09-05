@@ -31,13 +31,13 @@ console.log(productosLocales)
 
 while (seguirComprando === true) {
     if (agregarAlCarrito === 1) {
-        totalCompra = totalCompra + 700
+        totalCompra = totalCompra + camiseta.precio
     } else if (agregarAlCarrito === 2) {
-        totalCompra = totalCompra + 300
+        totalCompra = totalCompra + gorro.precio
     } else if (agregarAlCarrito === 3) {
-        totalCompra = totalCompra + 200
+        totalCompra = totalCompra + taza.precio
     } else if (agregarAlCarrito === 4) {
-        totalCompra = totalCompra + 100
+        totalCompra = totalCompra + llavero.precio
     } else {
         agregarAlCarrito = parseInt(prompt('Opción incorrecta, vuelve a intentarlo: \n1-Camiseta \n2-Gorro \n3-Taza \n4-Llavero'))
         continue
