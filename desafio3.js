@@ -1,3 +1,34 @@
+//ARRAYS - Desafío entregable 
+
+// const productosLocales = ["Camiseta", "Gorro", "Taza", "Llvero"]
+// console.log(productosLocales)
+
+// const productosImportados = ["Botella de Vino", "Bolso de viaje", "Portarretrato"]
+// console.log(productosImportados)
+
+// const camiseta ={
+//     nombre: 'Camiseta',
+//     precio: 700,
+// }
+// const gorro ={
+//     nombre: 'Gorro',
+//     precio: 300,
+// }
+// const taza ={
+//     nombre: 'Taza',
+//     precio: 200,
+// }
+// const llavero ={
+//     nombre: 'Llavero',
+//     precio: 100,
+// }
+// productosLocales.push(camiseta)
+
+
+
+
+
+
 //ARRAYS - practica 
 
 /*const numeros = [1,2,3,4,5];
@@ -10,7 +41,7 @@ console.log (resultado)*/
 /*const numeros = [1,2,3,4,5];
 for (let i=0; i<5; i++) {
     alert(numeros[i]);
-}*/
+}
 
 const miArray = ["marca", 3, "palabra"];
 miArray.push( 'otro elemento')
@@ -23,11 +54,11 @@ miArray.splice (2,2)
 console.log (miArray)
 console.log (miArray.join (" * "))
 
-/*const numeros = [1, 2, 3, 4, 5, 6, 7, 8]
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8]
 for (let i = 0; i < numeros.length; i++) {
     alert(numeros[i]);
 }
-console.log(numeros.length)*/
+console.log(numeros.length)
 
 const perros = ["Puppy", "Ronnie"]
 const gatos = ["Mishi", "Garfield", "Zuri"]
@@ -41,4 +72,4 @@ console.log (nombres.indexOf('Rita'))
 console.log(nombres.includes('Julieta'))
 
 nombres.reverse()
-console.log(nombres)
+console.log(nombres)*/
