@@ -1,9 +1,12 @@
-//desafío 2 - simulador interactivo
+//desafío  - simulador interactivo
+
+//VARIABLES 
 
 let totalCompra = 0
 let agregarAlCarrito = parseInt(prompt('Ingresa el produco que deseas comprar: \n1-Camiseta \n2-Gorro \n3-Taza \n4-Llavero'))
 let seguirComprando = true
 
+// CONDICIONAL
 
 while (seguirComprando === true) {
     if (agregarAlCarrito === 1) {
